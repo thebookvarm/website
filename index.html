@@ -1,0 +1,160 @@
+<html lang="en">
+	<head>
+		
+		<link rel="stylesheet" href="https://
+		maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/
+		bootstrap.min.css">
+		<style>	
+			p { /*Messing with the font and stuff*/
+				color: rgb(63,189,120); font-family : Helvetica, "Trebuchet MS", sans-serif; font-style: italic; font-size: 25px;
+				}
+			h1 { color: red;}
+			p,h1,body {background-image: url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg)}
+			p,h1,body { background-size: 1600px 900px}
+			p,h1,body {background-repeat: no-repeat;}
+
+		</style>
+
+	</head>
+
+	<body>
+		
+		<!-- Commenting on the body 
+			<header>
+			<div class="container">
+			<div class="jumbotron">
+
+		<h1>IT's ALIVE!!!</h1>
+		<p class="lead">Test Website.
+		</p>
+
+		<p>
+		<a class="btn btn-lg btn-success" href="#"
+		role="button">See more</a>
+		</p>-->
+		</div>
+		</div>
+		</header>
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+			<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" datatoggle="
+			collapse" data-target="#navbar" aria-expanded="false" ariacontrols="
+			navbar">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#">Learn to Code</a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+			<ul class="nav navbar-nav">
+			<li class="active"><a href="#">Home</a></li>
+			<li><a href="#overview">Overview</a></li>
+			<li><a href="#features">Features</a></li>
+			</ul>
+			</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+		<h2>First Code</h2>
+		<h3>Title</h3>
+		<p>Two roads diverged in a wood</p>
+		<p>A <em>poem</em> by <strong><span style="color:green">Robert Frost</strong></span></p>
+
+		<div>
+			<a href="https://www.poetryfoundation.org/resources/learning/core-poems/detail/44272" target="_self"> 
+					A link to the poem        
+		
+			</a>	 
+			<ul style="list-style-type:circle">
+				
+				<li>Other Poets</li>
+					<ol>
+						<li>Other Poems</li>
+						<li>More stuff</li>
+					</ol>
+
+			</ul>
+		</div>
+		<div class="container">
+		<div class="row">
+		<div class="col-md-4">I am column 1.</div>
+		<div class="col-md-4">I am column 2.</div>
+		<div class="col-md-4">I am column 3.</div>
+		</div>
+		<div class="row">
+		<div class="col-md-8">I am a larger column.</div>
+		<div class="col-md-2">I am a smaller column.</div>
+		<div class="col-md-2">I am a smaller column.</div>
+		</div>
+				</div>
+		<br>
+		<br>
+		<br>
+		<!--<img src = "http://sites.psu.edu/mgeppingerpassionblog/wp-content/uploads/sites/32731/2015/09/roads-diverging.jpg">-->
+		<br>
+		<br>
+		<p id = "myParagraph">
+		</p>
+		<!--<img src = "C:\Users\Mukund\Desktop\My Code\Photo\IMG.jpg">-->
+	
+		<!-- Adding Javascript
+		<script>
+			var result = 5+3;
+			alert("5+3 is " + result); 
+		</script>
+		<button type="button"
+		onclick="applyStyling()">Click</button>
+		<p id = "javascriptfun"></p>
+		<script>
+			function applyStyling() {
+			var Paragraph = document.getElementById("myParagraph");
+			Paragraph.innerhtml="Hello World";
+			Paragraph.style.color = "green";
+			Paragraph.style.fontSize = "290px";
+			Paragraph.style.fontWeight = "700";
+			}
+		</script>-->
+		<input id="numericInput" type="string">
+		<p id="result"></p>
+		<button type="button"
+		onclick="testInput()">TestInput</button>
+		<script>
+			function testInput() {
+			// Create variable to store test result
+			var text;
+			// Get the value of the input field with id="numb"
+			var x = document.getElementById("numericInput").value;
+			if (isNaN(x) || x < 0 || x > 99) {
+			text = "Wrong input";
+			} else {
+			text = "Correct input";
+			}
+			// Display result
+			document.getElementById("result").innerHTML = text;
+			}
+		</script>
+		<script
+		src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery
+		.min.js"></script>
+		<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstr
+		ap.min.js"></script>
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner" role="listbox">
+		<div class="item active">
+		Unos!
+		</div>
+		<div class="item"><strong><span style="color:red">
+		Dos!
+		</div>
+		</div>
+		</div>
+		<script type="text/javascript">
+		$(document).ready(function() {
+		$("#myCarousel").carousel({interval: 4000});
+		});
+		</script>
+	</body>
+</html>
